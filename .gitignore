@@ -1,0 +1,16 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform working directory
+.terraform/
+
+# Editor swap/backup files
+*.swp
+*.bak
+*.tmp
+
+# Local-only files
+terraform-k8s-setup/outputs.txt
+

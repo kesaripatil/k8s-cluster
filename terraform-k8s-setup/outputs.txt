@@ -1,0 +1,22 @@
+master_instance_id = "i-01bcbb13106755fde"
+master_ssm_status = "optional"
+master_tags = tomap({
+  "Description" = "Kubernetes master node"
+  "Name" = "manual-k8s-master-node"
+  "Project" = "manual-k8s"
+  "Role" = "Master"
+})
+worker_instance_ids = [
+  "i-0c48da288012c6983",
+]
+worker_ssm_statuses = [
+  "optional",
+]
+worker_tags_list = [
+  tomap({
+    "Description" = "Kubernetes worker node"
+    "Name" = "manual-k8s-worker-node"
+    "Project" = "manual-k8s"
+    "Role" = "Worker"
+  }),
+]
